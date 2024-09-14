@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Sep 14 15:13:07 2024 as: nmap -sC -sV -n -T5 -p- -oG allports_scan_common_scripts -v 10.129.157.249
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.157.249 ()	Status: Up
+Host: 10.129.157.249 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 25/open/tcp//smtp///, 53/open/tcp//domain//ISC BIND 9.16.1 (Ubuntu Linux)/, 110/open/tcp//pop3//Dovecot pop3d/, 143/open/tcp//imap//Dovecot imapd/, 993/open/tcp//ssl|imap//Dovecot imapd/, 995/open/tcp//ssl|pop3//Dovecot pop3d/, 3306/open/tcp//mysql//MySQL 8.0.27-0ubuntu0.20.04.1/, 33060/open/tcp//mysqlx?///
+# Nmap done at Sat Sep 14 15:20:23 2024 -- 1 IP address (1 host up) scanned in 435.36 seconds
