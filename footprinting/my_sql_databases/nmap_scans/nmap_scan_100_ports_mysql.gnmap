@@ -1,5 +1,4 @@
-# Nmap 7.94SVN scan initiated Tue Sep 17 21:44:52 2024 as: nmap -sV -sC -F --script mysql* -oA nmap_scan_100_ports_mysql -v 10.129.35.132
-# Ports scanned: TCP(100;7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 10.129.35.132 ()	Status: Up
-Host: 10.129.35.132 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 25/open/tcp//smtp?///, 53/open/tcp//domain//ISC BIND 9.16.1 (Ubuntu Linux)/, 110/open/tcp//pop3//Dovecot pop3d/, 143/open/tcp//imap//Dovecot imapd/, 993/open/tcp//ssl|imap//Dovecot imapd/, 995/open/tcp//ssl|pop3//Dovecot pop3d/, 3306/open/tcp//mysql//MySQL 8.0.27-0ubuntu0.20.04.1/	Ignored State: closed (92)
-# Nmap done at Tue Sep 17 21:55:29 2024 -- 1 IP address (1 host up) scanned in 636.96 seconds
+# Nmap 7.94SVN scan initiated Tue Sep 17 22:37:08 2024 as: nmap -sV -sC -p3306 --script mysql* -oA nmap_scan_100_ports_mysql -v 10.129.35.132
+# Ports scanned: TCP(1;3306) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.35.132 ()	Status: Down
+# Nmap done at Tue Sep 17 22:37:12 2024 -- 1 IP address (0 hosts up) scanned in 3.25 seconds

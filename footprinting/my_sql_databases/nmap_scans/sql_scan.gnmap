@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Tue Sep 17 22:39:47 2024 as: nmap -sV -sC -p3306 --script mysql* -oA sql_scan -v 10.129.35.132
+# Ports scanned: TCP(1;3306) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.35.132 ()	Status: Up
+Host: 10.129.35.132 ()	Ports: 3306/filtered/tcp//mysql///
+# Nmap done at Tue Sep 17 22:40:02 2024 -- 1 IP address (1 host up) scanned in 14.48 seconds

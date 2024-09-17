@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Sep 17 22:39:47 2024 as: nmap -sV -sC -p3306 -&#45;script mysql* -oA sql_scan -v 10.129.35.132 -->
+<nmaprun scanner="nmap" args="nmap -sV -sC -p3306 -&#45;script mysql* -oA sql_scan -v 10.129.35.132" start="1726605587" startstr="Tue Sep 17 22:39:47 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="3306"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1726605587"/>
+<taskend task="NSE" time="1726605587"/>
+<taskbegin task="NSE" time="1726605587"/>
+<taskend task="NSE" time="1726605587"/>
+<taskbegin task="Ping Scan" time="1726605587"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.35.132" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1726605587" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1726605588"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1726605601"/>
+<taskbegin task="SYN Stealth Scan" time="1726605601"/>
+<taskend task="SYN Stealth Scan" time="1726605602" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1726605602"/>
+<taskbegin task="NSE" time="1726605602"/>
+<taskend task="NSE" time="1726605602"/>
+<taskbegin task="NSE" time="1726605602"/>
+<taskend task="NSE" time="1726605602"/>
+<host starttime="1726605601" endtime="1726605602"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.129.35.132" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3306"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="mysql" method="table" conf="3"/></port>
+</ports>
+<times srtt="98037" rttvar="98037" to="490185"/>
+</host>
+<taskbegin task="NSE" time="1726605602"/>
+<taskend task="NSE" time="1726605602"/>
+<taskbegin task="NSE" time="1726605602"/>
+<taskend task="NSE" time="1726605602"/>
+<runstats><finished time="1726605602" timestr="Tue Sep 17 22:40:02 2024" summary="Nmap done at Tue Sep 17 22:40:02 2024; 1 IP address (1 host up) scanned in 14.48 seconds" elapsed="14.48" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

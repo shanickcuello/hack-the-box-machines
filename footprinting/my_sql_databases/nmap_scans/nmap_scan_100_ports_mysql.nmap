@@ -1,44 +1,4 @@
-# Nmap 7.94SVN scan initiated Tue Sep 17 21:44:52 2024 as: nmap -sV -sC -F --script mysql* -oA nmap_scan_100_ports_mysql -v 10.129.35.132
-Nmap scan report for 10.129.35.132
-Host is up (0.12s latency).
-Not shown: 92 closed tcp ports (reset)
-PORT     STATE SERVICE  VERSION
-22/tcp   open  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-25/tcp   open  smtp?
-| fingerprint-strings: 
-|   Hello: 
-|     220 InFreight ESMTP v2.11
-|     Syntax: EHLO hostname
-|   NULL: 
-|_    220 InFreight ESMTP v2.11
-53/tcp   open  domain   ISC BIND 9.16.1 (Ubuntu Linux)
-110/tcp  open  pop3     Dovecot pop3d
-143/tcp  open  imap     Dovecot imapd
-993/tcp  open  ssl/imap Dovecot imapd
-995/tcp  open  ssl/pop3 Dovecot pop3d
-3306/tcp open  mysql    MySQL 8.0.27-0ubuntu0.20.04.1
-| mysql-info: 
-|   Protocol: 10
-|   Version: 8.0.27-0ubuntu0.20.04.1
-|   Thread ID: 9
-|   Capabilities flags: 65535
-|   Some Capabilities: Support41Auth, DontAllowDatabaseTableColumn, InteractiveClient, LongPassword, SupportsTransactions, IgnoreSigpipes, FoundRows, SwitchToSSLAfterHandshake, Speaks41ProtocolOld, SupportsCompression, Speaks41ProtocolNew, IgnoreSpaceBeforeParenthesis, ODBCClient, LongColumnFlag, SupportsLoadDataLocal, ConnectWithDatabase, SupportsMultipleStatments, SupportsAuthPlugins, SupportsMultipleResults
-|   Status: Autocommit
-|   Salt: W(Qi\x118[)0bg\x18H&wV\x04.{\x1B
-|_  Auth Plugin Name: caching_sha2_password
-| mysql-enum: 
-|   Accounts: No valid accounts found
-|_  Statistics: Performed 9 guesses in 6 seconds, average tps: 1.5
-| mysql-brute: 
-|   Accounts: No valid accounts found
-|   Statistics: Performed 32761 guesses in 604 seconds, average tps: 57.5
-|_  ERROR: The service seems to have failed or is heavily firewalled...
-1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port25-TCP:V=7.94SVN%I=7%D=9/17%Time=66E9DC48%P=x86_64-pc-linux-gnu%r(N
-SF:ULL,1B,"220\x20InFreight\x20ESMTP\x20v2\.11\r\n")%r(Hello,36,"220\x20In
-SF:Freight\x20ESMTP\x20v2\.11\r\n501\x20Syntax:\x20EHLO\x20hostname\r\n");
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-
+# Nmap 7.94SVN scan initiated Tue Sep 17 22:37:08 2024 as: nmap -sV -sC -p3306 --script mysql* -oA nmap_scan_100_ports_mysql -v 10.129.35.132
+Nmap scan report for 10.129.35.132 [host down]
 Read data files from: /usr/bin/../share/nmap
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Tue Sep 17 21:55:29 2024 -- 1 IP address (1 host up) scanned in 636.96 seconds
+# Nmap done at Tue Sep 17 22:37:12 2024 -- 1 IP address (0 hosts up) scanned in 3.25 seconds
