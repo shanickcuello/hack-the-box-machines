@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sun Sep 22 20:09:56 2024 as: nmap -&#45;script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes -&#45;script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 -oA mssql_scan 10.129.230.249 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes -&#45;script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 -oA mssql_scan 10.129.230.249" start="1727028596" startstr="Sun Sep 22 20:09:56 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="1433"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.230.249" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1727028609" endtime="1727028616"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.129.230.249" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ms-sql-s" product="Microsoft SQL Server 2019" version="15.00.2000.00; RTM" method="probed" conf="10"/></port>
+</ports>
+<hostscript><script id="ms-sql-tables" output="&#xa;  10.129.230.249:1433: &#xa;[10.129.230.249:1433]&#xa;"><elem key="10.129.230.249:1433">&#xa;[10.129.230.249:1433]&#xa;</elem>
+</script><script id="ms-sql-empty-password" output="&#xa;  10.129.230.249:1433: "><table key="10.129.230.249:1433">
+</table>
+</script><script id="ms-sql-dac" output=""></script><script id="ms-sql-config" output="&#xa;  10.129.230.249:1433: &#xa;  ERROR: Bad username or password&#xa;"><elem key="10.129.230.249:1433">&#xa;  ERROR: Bad username or password&#xa;</elem>
+</script><script id="ms-sql-info" output="&#xa;  10.129.230.249:1433: &#xa;    Version: &#xa;      name: Microsoft SQL Server 2019 RTM&#xa;      number: 15.00.2000.00&#xa;      Product: Microsoft SQL Server 2019&#xa;      Service pack level: RTM&#xa;      Post-SP patches applied: false&#xa;    TCP port: 1433"><table key="10.129.230.249:1433">
+<table key="Version">
+<elem key="name">Microsoft SQL Server 2019 RTM</elem>
+<elem key="number">15.00.2000.00</elem>
+<elem key="Product">Microsoft SQL Server 2019</elem>
+<elem key="Service pack level">RTM</elem>
+<elem key="Post-SP patches applied">false</elem>
+</table>
+<elem key="TCP port">1433</elem>
+</table>
+</script><script id="ms-sql-hasdbaccess" output=""></script><script id="ms-sql-dump-hashes" output="&#xa;  10.129.230.249:1433: ERROR: Bad username or password"><elem key="10.129.230.249:1433">ERROR: Bad username or password</elem>
+</script><script id="ms-sql-xp-cmdshell" output="&#xa;  (Use -&#45;script-args=ms-sql-xp-cmdshell.cmd=&apos;&lt;CMD&gt;&apos; to change command.)&#xa;"/></hostscript><times srtt="94225" rttvar="94225" to="471125"/>
+</host>
+<runstats><finished time="1727028616" timestr="Sun Sep 22 20:10:16 2024" summary="Nmap done at Sun Sep 22 20:10:16 2024; 1 IP address (1 host up) scanned in 20.23 seconds" elapsed="20.23" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

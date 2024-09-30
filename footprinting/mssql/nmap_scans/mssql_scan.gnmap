@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Sun Sep 22 20:09:56 2024 as: nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 -oA mssql_scan 10.129.230.249
+Host: 10.129.230.249 ()	Status: Up
+Host: 10.129.230.249 ()	Ports: 1433/filtered/tcp//ms-sql-s//Microsoft SQL Server 2019 15.00.2000.00; RTM/
+# Nmap done at Sun Sep 22 20:10:16 2024 -- 1 IP address (1 host up) scanned in 20.23 seconds
