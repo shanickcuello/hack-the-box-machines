@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.94SVN scan initiated Sun Dec 29 23:02:50 2024 as: nmap -sU -&#45;script ipmi-version -p- -oX ipmi_script 10.129.62.0 -->
-<nmaprun scanner="nmap" args="nmap -sU -&#45;script ipmi-version -p- -oX ipmi_script 10.129.62.0" start="1735509770" startstr="Sun Dec 29 23:02:50 2024" version="7.94SVN" xmloutputversion="1.05">
-<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<!-- Nmap 7.94SVN scan initiated Sun Dec 29 23:06:57 2024 as: nmap -sU -&#45;script ipmi-version -p 623 -T4 -oX ipmi_script 10.129.62.0 -->
+<nmaprun scanner="nmap" args="nmap -sU -&#45;script ipmi-version -p 623 -T4 -oX ipmi_script 10.129.62.0" start="1735510017" startstr="Sun Dec 29 23:06:57 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="1" services="623"/>
 <verbose level="0"/>
 <debugging level="0"/>
 <hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
@@ -11,3 +11,32 @@
 <hostnames>
 </hostnames>
 </hosthint>
+<host starttime="1735510030" endtime="1735510030"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.129.62.0" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="udp" portid="623"><state state="open" reason="udp-response" reason_ttl="63"/><service name="asf-rmcp" method="table" conf="3"/><script id="ipmi-version" output="&#xa;  Version: &#xa;    IPMI-2.0&#xa;  UserAuth: password, md5, md2, null&#xa;  PassAuth: auth_msg, auth_user, non_null_user&#xa;  Level: 1.5, 2.0"><table key="Version">
+<elem>IPMI-2.0</elem>
+</table>
+<table key="UserAuth">
+<elem>password</elem>
+<elem>md5</elem>
+<elem>md2</elem>
+<elem>null</elem>
+</table>
+<table key="PassAuth">
+<elem>auth_msg</elem>
+<elem>auth_user</elem>
+<elem>non_null_user</elem>
+</table>
+<table key="Level">
+<elem>1.5</elem>
+<elem>2.0</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="109016" rttvar="81785" to="436156"/>
+</host>
+<runstats><finished time="1735510030" timestr="Sun Dec 29 23:07:10 2024" summary="Nmap done at Sun Dec 29 23:07:10 2024; 1 IP address (1 host up) scanned in 13.72 seconds" elapsed="13.72" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
