@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sun Dec 29 23:02:50 2024 as: nmap -sU -&#45;script ipmi-version -p- -oX ipmi_script 10.129.62.0 -->
+<nmaprun scanner="nmap" args="nmap -sU -&#45;script ipmi-version -p- -oX ipmi_script 10.129.62.0" start="1735509770" startstr="Sun Dec 29 23:02:50 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.62.0" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
